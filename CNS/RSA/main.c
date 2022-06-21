@@ -35,8 +35,9 @@ int main()
 	double k = 2;
 	d = (1 + (k * totient)) / e;
 	double cipherVal = pow(plainText, e);
-	double plainVal = pow(cipherVal, d);
 	cipherVal = fmod(cipherVal, n);
+	
+	double plainVal = pow(cipherVal, d);
 	plainVal = fmod(plainVal, n);
 
 
